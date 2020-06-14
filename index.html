@@ -14,14 +14,14 @@
     <div class="sidebar">
         <nav>
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a data-tab-target="#hero" >About</a></li>
+                <li><a data-tab-target="#portfolio" >Portfolio</a></li>
+                <li><a data-tab-target="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
     <div class="content">
-        <section class="hero">
+        <section class="hero" id="hero" data-tab-content>
             <img src="assets/img/jason.svg" alt="profile-picture">
             <div class="hero-content">
                 <h1>hi, I'm Jason</h1>
@@ -29,24 +29,26 @@
                 <a class="action-btn" href="">hire me</a>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio" data-tab-content>
+            <p>portfolio coming soon</p>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact" data-tab-content>
+            <p>contact details are on the way</p>
         </section>
     </div>
     <div class="footer">
         <footer>
             <ul>
-                <li><a href=""><i class="fa fa-instagram"></i><p>23k</p></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i><p>4k</p></a></li>
-                <li><a href=""><i class="fa fa-github"></i><p>6k</p></a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i><p>1k</p></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i><p>23k</p></a></li>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i><p>4k</p></a></li>
+                <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i><p>6k</p></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i><p>1k</p></a></li>
             </ul>
         </footer>
     </div>
 
 
 </div>
-
+<script src="js/toggle.js"></script>
 </body>
 </html>
